@@ -1,0 +1,1237 @@
+<html>
+<head>
+<style>
+body{margin:50px; background-color:aqua;border:10px groove #03fc88;}
+#firstsection{margin:50px;background-color:bisque;border:10px solid red;}
+#nofirst{display:none;}
+#nofirst1{display:none;}
+
+.playbtn{margin:40px 40px 40px 40px;
+text-align:center;
+color:indigo;
+background-color:fuchsia;
+font-size:10;
+border:5px inset pink;}
+.playbtn:hover{background-color:orange;}
+
+.rulebtn{margin:40px 40px 40px 40px;
+text-align:center;
+color:indigo;
+background-color:fuchsia;
+font-size:10;
+border:5px inset pink;}
+.rulebtn:hover{background-color:white;}
+
+.creditbtn{margin:40px 40px 40px 40px;
+text-align:center;
+color:indigo;
+background-color:fuchsia;
+font-size:10;
+border:5px inset pink;}
+.creditbtn:hover{background-color:darkgreen;}
+
+#scoreno{display:none;}
+#scoreno1{display:none;}
+
+#shcredit{margin-bottom:20px;margin-left:40px;height:300px;width:1200px;background-color:violet;animation-name:baxi;
+animation-iteration-count:infinite;animation-direction:normal;
+animation-timing-function:ease-in;
+animation-duration:4s;}
+@keyframes baxi{
+	 5%{background-color:orange;}
+	15%{background-color:red;}
+	25%{background-color:blue;}
+	35%{background-color:green;}
+	45%{background-color:pink;}
+	55%{background-color:black;}
+	65%{background-color:yellow;}
+	75%{background-color:brown;}
+	85%{background-color:gold;}
+	95%{background-color:gray;}
+}
+#btnpn{margin:40px 40px 40px 40px;background-color:mediumseagreen;color:purple;height:120px;width:280px;font-size:40px;}
+#chikbtn{margin-top:40px;height:30px,width:60px;background-color:yellow;color:purple;height:40px;width:60px;font-size:16px;}
+#btnpn:hover{background-color:gray;color:white;}
+#chikbtn:hover{background-color:gray;color:white;}
+.ply:hover{background-color:orange;color:white;}
+.rule:hover{background-color:white;color:blue;}
+.credit:hover{background-color:green;color:white;}
+#nocredit{display:none;}
+#bj:hover{
+	background-color:black;
+	color:white;}
+#bj{text-align:center;
+	font-size:50px;
+	border:5px inset lightpink;
+	background-color:white;
+	color:black;}
+#line{background-color:violet;}
+#norule{display:none;}
+#shrule{background-color:brown;
+	color:lightblue;
+	border:8px groove gold;}
+#nanu{color:white;font-size:80px;}
+#welcome{text-align:center;color:purple;font-size:30px;}
+#2h2{background-color:gold;color:black;}
+
+
+
+
+
+
+#secondsection{margin:50px; background-color:mediumseagreen;border:10px solid red;}
+#nosecond{display:none;}
+.card{
+	display:inline-block;
+	justify-content:center;
+	width:60px;
+	height:90px;
+	vertical-align:top;
+	border:2px ridge #000;
+	border-radius:10px;
+	font-size:1.5em;
+	box-shadow:3px 6px 9px;
+	position:relative;
+	margin:0;
+	background-color:white;
+}
+#holder{
+	display:block;
+	border:12px solid darkblue;
+	background-color:bisque;
+	height:400px;
+	width:80%;
+	margin-top:30px;
+	margin-left:110px;
+	margin-bottom:30px;
+}
+#dc,#pc,.container{
+	display:block;
+}
+#hrline{height:6px;background-color:#03C2FC;}
+#score{display:block;
+	color:blue;
+	background-color:#cce1ec;
+	border:7px double indigo;
+	margin-right:20px;
+	margin-left:20px;
+	margin-top:20px;
+	text-align:center;
+	font-size:16px;
+}
+#but{background-color:orange;color:white;}
+#score2{display:none;}
+#score1{display:none;}
+.bpan{
+	display:inline-block;
+	width:120px;
+	height:70px;
+	border:5px ridge pink;
+	background-color:#FF69B4;
+	color:purple;
+	text-align:center;
+	font-size:20px;
+	margin:30px 20px 30px 65px;
+	padding:5px;
+}
+.row{display:flex;
+	flex-wrap:nowrap;
+	gap:30px;
+	margin-bottom:20px;}
+#nh1{margin-top:15px;text-align:center;font-size:45px;background-color:gold;}
+#nh1:hover{background-color:white;}
+#but:hover{background-color:#cce1ec;color:orange;}
+#score:hover{background-color:gray;color:white;}
+.bpan:hover{background-color:#cce1ec;font-size:150%;}
+
+#gif{display:none;}
+
+#bud{margin:50px;
+height:600px;
+width:600px;
+background-color:lightblue;
+border:10px groove orange;}
+#hold{background-color:mediumseagreen;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+border:6px outset purple;
+height:400px;
+width:400px;
+margin-left:90px;
+margin-right:25px;}
+#hee{color:white;}
+
+#ruleshead{color:gold;font-size:40px;text-align:center;}
+
+.e:hover{background-color:#45A0E6;color:red;font-size:35px;}
+.e{background-color:#F2C464;
+color:blue;
+font-size:30px;
+text-align:center;
+border:1px solid #34C759;
+border-radius:16px;
+margin:30px 30px 30px;
+height:60px;
+width:60px;}
+
+
+#message{display:block;
+position:fixed;
+top:10px;
+left:80px;
+right:80px;
+background:#333;
+border:10px double gold;
+border-radius:25px;
+color:white;}
+
+#hid{display:none;}
+#nohid{display:block;}
+
+#notgift{display:none;}
+#yesgift{display:block;
+position:fixed;
+top:50px;
+left:80px;
+right:80px;
+background:darkblue;
+border:10px double silver;
+text-align:center;
+border-radius:25px;
+}
+.dynamice{color:cyan;font-size:25px;}
+
+#nobet{display:none;}
+#yesbet{display:block;
+position:fixed;
+top:50px;
+left:80px;
+right:80px;
+background:lightgreen;
+color:blue;
+border:10px double purple;
+text-align:center;
+border-radius:25px;
+}
+
+
+
+#noask{display:none;}
+
+#ask{
+position:fixed;
+top:50px;
+left:80px;
+right:80px;
+background-color:brown;
+color:bisque;
+border:10px double purple;
+text-align:center;
+border-radius:25px;
+}
+
+#norestart{display:none;}
+#restart{
+position:fixed;
+top:50px;
+left:80px;
+right:80px;
+background-color:blue;
+color:white;
+border:10px double darkgray;
+text-align:center;
+border-radius:25px;}
+
+</style>
+</head>
+<body>
+
+
+<section id="firstsection">
+<p id="welcome"><b>WELCOME</b></p>
+<hr size="10px"id="line">
+<p id="bj"><b>BLACK  JACK</b></p>
+<div class="playbtn">
+<button id="btnpn" onclick="c()">PLAY</input>
+</div>
+<div class="rulebtn">
+<button id="btnpn" onclick="rule()">RULES</input>
+</div>
+<div class="creditbtn">
+<button id="btnpn" onclick="credit()">CREDITS</input>
+</div>
+
+<div id="nocredit">
+<h2 id="2h2">A Primary Product By</h2>
+<h4 id="nanu"><center>N  AKASH</center></h4>
+<button id="chikbtn" onclick="backcredit()">BACK</input>
+</div>
+
+
+<div id="norule">
+<h1 id="ruleshead"><strong>RULES</h1>
+<hr size="10px"id="line"><br>
+<ol type="I">
+<li><h3>Firstly Dealer will get a random card.</h3></li>
+<li><h3>Player will get two random cards.</h3></li>
+<li><h3>If any of these get a face card and an ace card in their first two draws, then it's - <span style="font-size:25px;background-color:silver;color:blue;">BLACK JACK</span> .</h3></li>
+<li><h3>Or else having the score 21 will win.</h3></li>
+<li><h3>If user wish to have a card, can choose "HIT" option.</h3></li>
+<li><h3>Or else can choose "STAND" to give the game towards Dealer to continue.</h3></li>
+<li><h3>Who ever reaches max of score 21 then it's "BUST" means out.</h3></li>
+<li><h3>If both are having same score then it's "PUSHED" - nobody wins ,drew.</h3></li>
+<li><h3>ACE card has two values 1 & 11 ,Player can choose wisely.</h3></li>
+</ol><br>
+<hr size="10px"id="line"><br><br>
+<table bgcolor="gold"><strong>
+
+<tr align="center">
+<th>Index</th>
+<th>Card Name</th>
+<th>Card Value</th></tr>
+
+<tr align="center">
+<td>1</td>
+<td>ACE-A</td>
+<td>1 OR 11</td></tr>
+
+<tr align="center">
+<td>2</td>
+<td>10,J,Q,K</td>
+<td>10</td></tr>
+
+<tr align="center">
+<td>3</td>
+<td>1 to 9</td>
+<td>Same as name</td></tr>
+
+</table>
+<button id="chikbtn" onclick="backrule()">BACK</input>
+</div>
+
+
+</section>
+
+
+<section id="nosecond">
+<p id="nh1"><span style="color:#480051;">BL</span><span style="color:yellow;"> a</span><span style="color:#480051;">CK</span><span style="color:gold;">__</span>J<span style="color:yellow;">a</span><span style="color:#480051;">CK</span></p>
+<hr id="hrline">
+
+<div class="container">
+<button class="bpan" onclick="gift()">GIFTS</button>
+<button class="bpan" onclick="start()">START</button>
+<button class="bpan" onclick="hit()">HIT</button>
+<button class="bpan" onclick="stand()">STAND</button>
+<button class="bpan" onclick="reset()">RESTART</button>
+<button class="bpan" onclick="exit()">EXIT</button>
+
+<div id="scoreno">
+<h2 id="pl"></h2>
+<h2 id="dl"></h2></div>
+
+
+
+<div id="scoreno1">
+<div class="row" id="pc"><h2>PLAYER'S CARDS  :: </h2></div>
+<div class="row" id="dc"><h2>DEALER'S CARDS  :: </h2></div></div>
+
+
+</div>
+
+</section>
+<section id="gif">
+<h2><center>DAILY GIFT CLAIM</center></h2>
+
+<p id="hee"><center>Choose <span style="color:red;">Any</span> One <span style="color:violet;">Gift</span>!</center></p>
+<div id="hold">
+
+<div class="e" id="1" onclick="s(1)">1</div>
+<div class="e" id="2" onclick="s(2)">2</div>
+<div class="e" id="3" onclick="s(3)">3</div>
+
+<div class="e" id="4" onclick="s(4)">4</div>
+<div class="e" id="5" onclick="s(5)">5</div>
+<div class="e" id="6" onclick="s(6)">6</div>
+
+<div class="e" id="7" onclick="s(7)">7</div>
+<div class="e" id="8" onclick="s(8)">8</div>
+<div class="e" id="9" onclick="s(9)">9</div>
+
+<button id="chikbtn" onclick="back()">BACK</button>
+</div>
+
+</section>
+
+
+
+<div id="hid" style="text-align:center;">
+</div>
+
+
+<div style="display:none;">
+<h3 id="pnow">Play Begins !</h3>
+<h3 id="begin">Let's Play !</h3>
+<div id="ubj"><h2>BLACK JACK !!! </h2><h3> Player Won !</h3></div>
+<div id="dbj"><h2>BLACK JACK !!! </h2><h3> Dealer Won !</h3></div>
+<div id="dbust"><h2>BUST !!! </h2><h3>Player Won !</h3><h3>Dealer Lost </h3></div>
+<div id="ubust"><h2>BUST !!! </h2><h3>Dealer Won !</h3><h3>Player Lost </h3></div>
+<div id="push"><h2>PUSHED !!! </h2><h3>Nobody Wins ! </h3></div>
+<div id="pwon"><h3>Player Won !</h3><h3>Dealer Lost </h3></div>
+<div id="dwon"><h3>Dealer Won !</h3><br>Player Lost </h3></div>
+<div id="ust"><h3>Player choosed to stand ,</h3><h3>Dealer plays now...</h3></div>
+<h3 id="dst">Dealer choosed to stand</h3>
+<h3 id="minb">Minimum met should be atleast 100 </h3>
+<h3 id="maxb">You don't have enough coins to bet.. </h3>
+<h2 id="start">PLEASE START THE GAME!!!</h2>
+</div>
+
+
+<div id="notgift"></div>
+
+<div id="nobet"></div>
+
+<div id="nobet1"></div>
+
+<div id="ask" style="display:none;">
+<h2> Say how much you bet ? </h2>
+<h3> Minimum = 100 : </h3>
+<input type="text" id="getbet" required></input>
+<button onclick="betbut()">BET</bet>
+</div>
+
+<div id="restart" style="display:none;">
+<h2>You don't have enough coins to play...</h2>
+<h3>Restart the game ? </h3>
+<button onclick="restart('yes')" id="bre">YES</button>
+<button onclick="restart('no')" id="bre">NO</button>
+</div>
+
+<script>
+
+
+
+		function askbet(){
+
+	if(visit==0){
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Please open 'GIFTS' to claim daily coins";
+bro.appendChild(sis);
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+}
+	else{
+		if(va==0)
+document.getElementById("restart").style.display="block";
+
+
+		else{
+document.getElementById("ask").style.display="block";
+if(bok==1)
+document.getElementById("ask").style.display="none";
+}
+}
+}
+
+
+let bok=0;
+
+
+
+function validate(bet){
+			if(bet<100){
+setTimeout(()=>{
+maxshow(tree[11]);},3000);
+
+
+setTimeout(()=>{
+askbet();},6000);}
+			else if(bet<=va){
+
+bok=1;
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="You have placed "+bet+" coins bet ";
+bro.appendChild(sis);
+
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+start(1);
+},3000);
+
+
+
+}
+			else{
+setTimeout(()=>{
+maxshow(tree[12]);},3000);
+
+setTimeout(()=>{
+askbet();},6000);}
+}
+
+
+function betbut(){
+document.getElementById("ask").style.display="none";
+bet=document.getElementById("getbet").value;
+validate(bet);
+}
+
+
+
+
+	function restart(hg){
+document.getElementById("restart").style.display="none";
+let bye=document.getElementById("nobet");
+bye.id="yesbet";
+let dude=document.createElement("p");
+
+	if(hg==='yes'){
+dude.textContent="Restarting the game";
+bye.appendChild(dude);
+setTimeout(()=>{
+bye.removeChild(dude);
+closed();},2000);
+
+	}else{
+dude.textContent="You can't continue the Game";
+bye.appendChild(dude);
+setTimeout(()=>{
+bye.removeChild(dude);
+closed();},2000);}
+}
+
+
+
+//=============0======1=======2=======3======4=====5=====6=====7=====8======9======10=====11====12=====13===
+const tree=["pnow","begin","dbust","ubust","ust","dst","ubj","dbj","push","pwon","dwon","minb","maxb"];
+
+
+
+
+
+
+function c(){
+//alert("Play begins!");
+maxshow(tree[0]);
+
+let foot=document.getElementById("firstsection");
+foot.id="nofirst";
+let ball=document.getElementById("nosecond");
+ball.id="secondsection";
+//window.open("file:///C:/Users/HP/Desktop/new2.html","_blank");
+}
+
+
+
+
+function maxshow(bax){
+
+setTimeout(()=>{},2000);
+
+let j12=document.getElementById("hid");
+j12.id="message";
+setTimeout(()=>{},2000);
+let r12=document.getElementById(""+bax);
+j12.appendChild(r12);
+
+setTimeout(()=>{
+//j12.innerHTML="";
+j12.removeChild(r12);
+j12.id="hid";
+bavuta=0;
+},4000);
+
+}
+
+
+
+function rule(){
+const g=document.getElementById("norule");
+g.id="shrule";
+}
+
+function credit(){
+const gh=document.getElementById("nocredit");
+gh.id="shcredit";
+}
+
+function backrule(){
+const g=document.getElementById("shrule");
+g.id="norule";
+}
+
+function backcredit(){
+const g=document.getElementById("shcredit");
+g.id="nocredit";
+}
+
+/*function mexit(){
+let j12=document.getElementById("message");
+j12.remove();
+j12.id='hid';
+}*/
+
+
+let time=1,va=0,wa=0,visit=0,b=0;
+gifts=[200,300,500,600,100,900,0,1600,0];
+
+let predeal_score=0,nan_score=0,vi=0,dealer_score=0;//\u2666\u2663\u2660\u2665
+let i1=0,i=0,mi=1,valid=0,scorecheck=0,holdercheck=0;
+let ff=0,vv=0;
+
+const type=["\u2665A","\u2660A","\u2663A","\u2666A"];
+const faced=["\u266510","\u266010","\u266310","\u266610","\u2665J","\u2660J","\u2663J","\u2666J","\u2665Q","\u2660Q","\u2663Q","\u2666Q","\u2665K","\u2660K","\u2663K","\u2666K"];
+const delay=2000;
+
+const all=[];
+const user=[];
+const deal=[];
+const xx=52;
+const diamond = 
+["\u2666A","\u26662","\u26663","\u26664","\u26665","\u26666","\u26667","\u26668","\u26669","\u266610","\u2666J","\u2666Q","\u2666K"];
+const club = 
+["\u2663A","\u26632","\u26633","\u26634","\u26635","\u26636","\u26637","\u26638","\u26639","\u266310","\u2663J","\u2663Q","\u2663K"];
+const spade = 
+["\u2660A","\u26602","\u26603","\u26604","\u26605","\u26606","\u26607","\u26608","\u26609","\u266010","\u2660J","\u2660Q","\u2660K"];
+const heart = 
+["\u2665A","\u26652","\u26653","\u26654","\u26655","\u26656","\u26657","\u26658","\u26659","\u266510","\u2665J","\u2665Q","\u2665K"];
+
+let bet=0;
+
+		function start(hill){
+ad();
+mix(all);
+askbet();
+	if((visit==1) && (bok==1) && (hill==1)){
+scorepan();
+predeal();
+valid=1;
+hit();
+hit();
+maxshow(tree[1]);
+}}
+
+
+
+
+
+
+
+	function ad(){
+	for(i=0;i<diamond.length;i++,i1++)
+all[i1]=diamond[i];
+	for(i=0;i<club.length;i++,i1++)
+all[i1]=club[i];
+	for(i=0;i<spade.length;i++,i1++)
+all[i1]=spade[i];
+	for(i=0;i<heart.length;i++,i1++)
+all[i1]=heart[i];
+return 1;}
+
+
+
+	function mix(all){
+let j,k;
+	for(i=xx-1;i>0;i--){
+j=Math.floor(Math.random()*(i+1));
+k=all[i];
+all[i]=all[j];
+all[j]=k;}
+return all;}
+
+
+
+	function scorepan(){
+vv=document.getElementById("scoreno");
+vv.id="score";
+scorecheck=1;
+ff=document.getElementById("scoreno1");
+ff.id="holder";
+holdercheck=1;
+return 1;}
+
+
+	function dupscore(scored){
+document.getElementById("dl").innerText="DEALER'S SCORE:"+scored;
+return 1;}
+
+
+
+	function uupscore(score){
+document.getElementById("pl").innerText="PLAYER'S SCORE:"+score;
+return 1;}
+
+
+	function predeal(){
+let x=Math.floor(Math.random()*xx);
+let card=all[x];
+deal.push(card);
+let first=deal[0];
+let p=isAce(first);
+	if(p===1)
+dealer_score+=11;
+	else
+dealer_score+=val(card);
+
+dupscore(dealer_score);
+discard(deal,card);
+}
+
+
+
+function discard(varr,carr){
+
+const nc=document.createElement("div");
+nc.className="card";
+nc.textContent=""+carr;
+
+	if(varr==user)
+document.getElementById("pc").appendChild(nc);
+
+	if(varr==deal)
+document.getElementById("dc").appendChild(nc);
+}
+
+
+
+function val(cd){
+let tt=isAce(cd);
+let tt1=isFace(cd);
+	if(tt==1)
+return parseInt(prompt("Ace value {1 OR 11):???"));
+	else if(tt1==1)
+return 10;
+	else
+return parseInt(cd.substring(1));
+}
+
+let jog=0,ran=0;
+let ubjk=0,dbjk=0;
+
+
+
+
+	function uisBjk(user){
+const f=user[0];
+const f1=user[1];
+	if((isAce(f) && isFace(f1)) || (isAce(f1) && isFace(f))){
+	if(nan_score==21){
+bet*=2.5;
+uupscore(nan_score);
+
+
+setTimeout(()=>{maxshow(tree[6]);
+//==================================
+},5000);
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Congratulations!!\nYou Won "+bet+" coins! ";
+bro.appendChild(sis);
+
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("Congratulations!!\nYou Won "+bet+" coins!");
+
+setTimeout(()=>{
+closed();},10000);
+}
+	else
+return b;
+}}
+
+
+
+
+	function disBjk(deal){
+const f=deal[0];
+const f1=deal[1];
+	if((isAce(f) && isFace(f1)) || (isAce(f1) && isFace(f))){
+bet*=1;
+dupscore(dealer_score);
+
+
+setTimeout(()=>{maxshow(tree[7]);
+
+//==================================
+
+},5000);
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Tough Luck!!\nYou Lost "+bet+" coins! ";
+bro.appendChild(sis);
+
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("Tough Luck!!\nYou Lost "+bet+" coins!");
+
+setTimeout(()=>{
+closed();},10000);
+}
+	else
+return b;
+}
+
+
+
+
+function isAce(dog){
+	return type.includes(dog)?1:0;}
+
+
+
+function isFace(cat){
+	return faced.includes(cat)?1:0;
+
+}
+
+
+
+		function hit(){
+	if(valid==0){
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent=" PLEASE START THE GAME!!! ";
+bro.appendChild(sis);
+
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("PLEASE START THE GAME!!!\n");
+}
+	else{
+	if(user.length==2)
+uisBjk(user);
+let x=Math.floor(Math.random()*xx);
+let card=all[x];
+user.push(card);
+let mm=val(card);
+nan_score+=mm;
+
+discard(user,card);
+uupscore(nan_score);
+
+	if(user.length==2)
+ran=uisBjk(user);
+
+	if(nan_score==21 && ran==b){
+bet*=2;
+
+
+setTimeout(()=>{maxshow(tree[9]);
+
+//==========================================
+},3000);
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Congratulations!!\nYou Won "+bet+" coins! ";
+bro.appendChild(sis);
+
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("Congratulations!!\nYou Won "+bet+" coins!");
+
+setTimeout(()=>{
+closed();},10000);}
+
+	else if(nan_score>21){
+bet*=1;
+
+
+setTimeout(()=>{maxshow(tree[3]);
+
+//========================================
+},4000);
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Tough Luck!!\nYou Lost "+bet+" coins! ";
+bro.appendChild(sis);
+
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("Tough Luck!!\nYou Lost "+bet+" coins!");
+
+setTimeout(()=>{
+closed();},10000);}
+}}
+
+
+
+		function stand(){
+	if(valid==0){
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent=" PLEASE START THE GAME!!! ";
+bro.appendChild(sis);
+
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("PLEASE START THE GAME!!!\n");
+	}else{
+
+
+setTimeout(()=>{maxshow(tree[4]);
+//==========================================
+dealer(nan_score);},1000);
+}}
+
+
+
+	function stan(dealer_score,nan_score){
+maxshow(tree[5]);//===============================================
+	if(dealer_score==nan_score){
+bet*=1;
+
+
+setTimeout(()=>{
+maxshow(tree[8]);
+},5000);
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="You Received "+bet+" coins! ";
+bro.appendChild(sis);
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("You Received "+bet+" coins!");
+
+//=========================================================
+setTimeout(()=>{
+closed();},10000);}
+
+	if(nan_score>dealer_score && nan_score<=21){
+bet*=2;
+
+
+
+setTimeout(()=>{maxshow(tree[9]);
+
+},4000);//======================================
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Congratulations!!\nYou Won "+bet+" coins! ";
+bro.appendChild(sis);
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("Congratulations!!\nYou Won "+bet+" coins!");
+
+setTimeout(()=>{
+closed();},10000);}
+
+	if(dealer_score>nan_score && jog==b && dealer_score<=21){
+bet*=1;
+
+
+
+setTimeout(()=>{maxshow(tree[10]);
+
+},4000);
+//===================================================
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Tough Luck!!\nYou Lost "+bet+" coins! ";
+bro.appendChild(sis);
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("Tough Luck!!\nYou Lost "+bet+" coins!");
+
+setTimeout(()=>{
+closed();},10000);}//==================================================
+}
+
+
+
+	function dealer(nan_score){
+	if(dealer_score>=nan_score && dealer_score<=21){
+setTimeout(()=>{
+stan();},3000);
+}
+
+let f2=0;
+let f1=0;
+let x=Math.floor(Math.random()*xx);
+let card=all[x];
+deal.push(card);
+let f=deal[0];
+
+	if(deal.length>=2){
+f1=deal[mi];mi++;
+	if(isAce(f1)==1)
+dealer_score+=aces(dealer_score,1,card);
+	else
+dealer_score+=val(card);
+
+discard(deal,card);
+dupscore(dealer_score);
+}
+
+	if((isAce(f) || isFace(f)) && deal.length==2)
+jog=disBjk(deal);
+	
+	if(dealer_score==21 && jog==1){
+bet*=1;
+
+
+setTimeout(()=>{maxshow(tree[10]);
+
+},4000);
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Tough Luck!!\nYou Lost "+bet+" coins! ";
+bro.appendChild(sis);
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("Tough Luck!!\nYou Lost "+bet+" coins!");
+
+//=========================
+setTimeout(()=>{
+closed();},10000);}
+	if(dealer_score<17 && dealer_score<nan_score){
+setTimeout(()=>{
+dealer(nan_score);},2000);
+	}else if((dealer_score<=21) && ((dealer_score>=nan_score) || (dealer_score>=17))){
+setTimeout(()=>{
+stan(dealer_score,nan_score);},4000);}
+	if(dealer_score>21){
+bet*=2;
+
+
+setTimeout(()=>{maxshow(tree[2]);
+
+},4000);//=====================
+
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent="Congratulations!!\nYou Won "+bet+" coins! ";
+bro.appendChild(sis);
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+//alert("Congratulations!!\nYou Won "+bet+" coins!");
+
+setTimeout(()=>{
+closed();},10000);}}
+
+
+
+
+
+function aces(dealer_score,vi,card){
+let temp=0;
+	if(deal.length>2 || vi==1)
+temp=dealer_score<=10?11:1;
+return temp;
+}
+
+
+
+function closed(){
+reset();
+
+}
+
+
+function reset(){
+location.reload();}
+
+
+
+
+/*if(scorecheck==1){
+let dad=document.getElementById("score");
+dupscore(0);
+uupscore(0);
+dad.id="scoreno";}
+	if(holdercheck==1){
+let mom=document.getElementById("holder");
+mom.remove();
+mom.id="scoreno1";}
+
+}
+
+let predeal_score=0,nan_score=0,vi=0,dealer_score=0;
+let i1=0,i=0,mi=1;
+let valid=0,time=0,va=0,wa=0,visit=0;
+let bet=0;
+*/
+
+
+
+		function stop(){
+let bag=confirm("Are you sure to end???");//==============================
+	if(bag==true){
+setTimeout(()=>{
+closed();},2000);
+//window.open("file:///C:/Users/HP/Desktop/new1.html","_blank");
+	}else
+return 1;}
+
+
+
+let giftcheck=0,joke=0;
+		function gift(){
+	if(giftcheck==0){
+joke=document.getElementById("gif");
+//giftcheck=1;
+joke.id="bud";}
+	/*if(giftcheck!==0){
+joke=document.getElementById("gif");
+giftcheck=0;
+joke.id="bud";
+}*/
+
+}
+	
+function s(x){
+visit=1;
+
+let kill=document.getElementById("notgift");
+kill.id="yesgift";
+let dead=document.createElement("p");
+dead.className="dynamice";
+
+if(time>1){
+//er(va);
+dead.textContent="You can't open again!!!\nYou have earned : "+va+" coins today";
+kill.appendChild(dead);
+setTimeout(()=>{
+kill.removeChild(dead);
+kill.id="notgift";
+},3000);
+
+}else{
+time++;
+let r=Math.floor(Math.random()*gifts.length);
+va=gifts[r];
+
+
+
+	if(va==0)
+dead.textContent="You Received "+va+" coins in the box - "+x+"\nBetter Luck Next Time";
+	else
+dead.textContent="You Received "+va+" coins in the box - "+x;
+
+kill.appendChild(dead);
+
+setTimeout(()=>{
+kill.removeChild(dead);
+kill.id="notgift";
+},3000);
+
+}
+
+}
+
+
+
+/*
+function er(va){
+
+let kill1=document.getElementById("notgift");
+kill1.id="yesgift";
+let dead1=document.createElement("p");
+dead1.id="dynamice";
+
+	if(time>1){
+dead1.textContent="You can't open again!!!\nYou have earned : "+va+" coins today.";
+setTimeout(()=>{
+kill1.removeChild(dead1);
+kill1.id="notgift";
+},3000);
+}
+return 0;
+}*/
+
+
+function back(){
+const tomb=document.getElementById("bud");
+tomb.id="gif";
+}
+
+
+
+function exit(){
+let ex=confirm("Are You Sure To Exit ???");
+if(ex==true){
+setTimeout(()=>{
+window.close();},3000);
+}
+else{
+let bro=document.getElementById("nobet");
+bro.id="yesbet";
+let sis=document.createElement("p");
+
+sis.textContent=" Play Continues... ";
+bro.appendChild(sis);
+
+setTimeout(()=>{
+bro.removeChild(sis);
+bro.id="nobet";
+},3000);
+}
+}
+
+
+
+
+</script>
+</body>
+</html>
